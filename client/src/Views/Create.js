@@ -122,7 +122,7 @@ const Create = (props) => {
                             )}
                 </div>
                 <div className="row my-2">
-                    <input type="checkbox" checked name="hasPegLeg" id="" value={hasPegLeg} onSelect={e => setHasPegLeg(e.target.value)} />
+                    <input type="checkbox" checked={hasPegLeg} name="hasPegLeg" id="" onClick={e => setHasPegLeg(e.target.checked)} />
                     <label>Peg Leg</label>
                     {errors && (
                                 <span className="text-danger">
@@ -131,7 +131,7 @@ const Create = (props) => {
                             )}
                 </div>
                 <div className="row my-2">
-                    <input type="checkbox" checked name="hasEyePatch" id="" value={hasEyePatch} onSelect={e => setHasEyePatch(e.target.value)} />
+                    <input type="checkbox" checked={hasEyePatch} name="hasEyePatch" id="" onClick={e => setHasEyePatch(e.target.checked)} />
                     <label>Eye Patch</label>
                     {errors && (
                                 <span className="text-danger">
@@ -140,7 +140,7 @@ const Create = (props) => {
                             )}
                 </div>
                 <div className="row my-2">
-                    <input type="checkbox" checked name="hasHookHand" id="" value={hasHookHand} onSelect={e => setHasHookHand(e.target.value)} />
+                    <input type="checkbox" checked={hasHookHand} name="hasHookHand" id="" onClick={e => setHasHookHand(e.target.checked)} />
                     <label>Hook Hand</label>
                     {errors && (
                                 <span className="text-danger">
